@@ -106,11 +106,31 @@
 }
 
 .logout-container {
-  
-  
   position: absolute; /* Use absolute positioning */
   top: 20px; /* Distance from the top */
   right: 20px; /* Distance from the right */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .logout-container {
+    top: 10px; /* Adjust top position for smaller screens */
+    right: 10px; /* Adjust right position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logout-container {
+    top: 5px; /* Further adjust top position for very small screens */
+    right: 5px; /* Further adjust right position for very small screens */
+    font-size: 10px; /* Optional: adjust font size for smaller devices */
+  }
+  .logout-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 12px; /* Adjust font size */
+    /* You can add more styling as needed */
+  }
 }
 
 .logout-button {
